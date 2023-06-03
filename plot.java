@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 /**
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  * Stores the X, Y, and Z axis along with all the lines
  * as seen in matplotlib- essentially the base 3d graph function
  */
@@ -26,7 +28,7 @@ public class plot {
         numTall = 10;
         
         axis = new ArrayList<graphableLine>();
-        
+
         defineAxisArr();
     }
     

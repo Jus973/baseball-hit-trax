@@ -7,6 +7,8 @@ import java.awt.event.*;
 import javax.swing.JFrame;
  
 /** 
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  * Class that deals with all the GUI portions of our code
  */
 public class runGraphGUI extends JFrame implements KeyListener{
@@ -16,7 +18,7 @@ public class runGraphGUI extends JFrame implements KeyListener{
     private camera Cam;
     ArrayList<graphable> baseballPoints;
 
-    
+
     /**
      * Constructor for the runGraphGUI class
      * @param rG2 A runGraph object, which should have all the points to be graphed

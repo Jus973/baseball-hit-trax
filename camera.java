@@ -1,8 +1,8 @@
 
 //not to be graphed
 /**
- * @author Justin
- * @version 5/222/3
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  * An object made to represent the camera, which is used when running the graph GUI 
  * to properly determine where everything should be translated
  */
@@ -56,7 +56,4 @@ public class camera extends graphable{
     public void setAngleL (double newAng){
         angleL = newAng;
     }
-
-    
-
 }

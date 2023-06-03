@@ -1,4 +1,6 @@
 /**
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  * An object that represents a line on a 3D plane. It extends graphable and is represented 
  * through a start point and an endpoint.
  */

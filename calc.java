@@ -5,6 +5,8 @@ import java.util.Scanner; // Import the Scanner class to read text files
 
 /**
  * Calculations class that stores a set of 3d coordinates to be plotted in gui
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  */
 public class calc {
 

@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 
 /**
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  * Object that represents the running of a graph. Handles 3d to 2d calculations
  */
 public class runGraph 

@@ -1,29 +1,23 @@
 import java.util.ArrayList;
 
+/**
+ * @author Justin
+ * @version 6.2.23
+ * Main function to be ran. Contains and interlocks everything.
+ */
 public class main {
+    /**
+     * Main method where camera object is created and baseballDots are plotted
+     * @param args[] an string of arguments
+     */
     public static void main (String args[]){
-        //run calculations off coord.txt
-        //create calc object
-
         camera c = new camera (-3.8, 14.2, 5, 
                                 14, -6.3);
-        
-        //create camera
-        //create baseball
-        
-        //open parameters
-        
         calc objs = new calc();
-        ArrayList<graphable> baseballDots = objs.getGList(); //add values to graph here..
-        
-
-        //baseballDots.add(new graphable(5, 5, 5));
-        
-        //add all calc.getEquations into baseballDots, so it should just be a bunch of 3d points
-        
+        ArrayList<graphable> baseballDots = objs.getGList(); 
         
         new runGraphGUI(c, baseballDots).setVisible(true);
-
-        //arrows are shifted for angle / camera movement
+        
+        //arrows are camera angle changes, WASD is camera x/y movement, and EQ is up/down
     }
 }

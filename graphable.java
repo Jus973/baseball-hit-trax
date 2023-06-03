@@ -1,5 +1,7 @@
 
 /**
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  * Class that represents a 3d object. 
  */
 public class graphable {
