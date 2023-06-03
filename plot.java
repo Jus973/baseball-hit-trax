@@ -26,7 +26,7 @@ public class plot {
         numTall = 10;
         
         axis = new ArrayList<graphableLine>();
-
+        
         defineAxisArr();
     }
     

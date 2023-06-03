@@ -16,7 +16,7 @@ public class runGraphGUI extends JFrame implements KeyListener{
     private camera Cam;
     ArrayList<graphable> baseballPoints;
 
-
+    
     /**
      * Constructor for the runGraphGUI class
      * @param rG2 A runGraph object, which should have all the points to be graphed
@@ -68,6 +68,13 @@ public class runGraphGUI extends JFrame implements KeyListener{
         
         Queue<graphableLine> lineList = a.getLineList();
         
+        
+        Queue<graphable> pointList = a.getPointList();
+
+        for (graphable i : pointList){
+            System.out.println("Drawing point at " + i);
+            drawDot(g, (int) i.getX(), (int) i.getY());
+        }
 
         for (graphableLine i : lineList){
             System.out.println("Drawing line at " + i.getX() + " " + i.getY() + " TO " +  
@@ -77,12 +84,6 @@ public class runGraphGUI extends JFrame implements KeyListener{
 
         }
 
-        Queue<graphable> pointList = a.getPointList();
-
-        for (graphable i : pointList){
-            System.out.println("Drawing point at " + i);
-            drawDot(g, (int) i.getX(), (int) i.getY());
-        }
 
         /*
         if (pointList.size() != 0 || lineList.size() != 0){
@@ -93,7 +94,7 @@ public class runGraphGUI extends JFrame implements KeyListener{
             }
         }
          */
-        
+
     }
     
     /* 
@@ -174,6 +175,10 @@ public class runGraphGUI extends JFrame implements KeyListener{
 
         System.out.println(rG.getC().getAngleW());
         System.out.println(rG.getC().getAngleL());
+        System.out.println(rG.getC().getX());
+        System.out.println(rG.getC().getY());
+        System.out.println(rG.getC().getZ());
+
     
     }
 

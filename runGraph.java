@@ -54,7 +54,7 @@ public class runGraph
         for (graphable i : gList){
             g.add(plotPoint(i));
         }
-
+        
         
 
         //gL.add(plotLine(new graphableLine(0, 0, 0, 0, 500, 0)));
@@ -65,19 +65,7 @@ public class runGraph
         plotGraph();
         
         //cube
-        // gL.add(plotLine(new graphableLine(0, 0, 0, 0, 0, 1)));
-        // gL.add(plotLine(new graphableLine(0, 0, 0, 0, 1, 0)));
-        // gL.add(plotLine(new graphableLine(0, 0, 0, 1, 0, 0)));
-        // gL.add(plotLine(new graphableLine(1, 0, 0, 1, 0, 1)));
-        // gL.add(plotLine(new graphableLine(1, 0, 0, 1, 1, 0)));
-        // gL.add(plotLine(new graphableLine(1, 0, 0, 1, 0, 0)));
-        // gL.add(plotLine(new graphableLine(0, 1, 0, 1, 1, 0)));
-        // gL.add(plotLine(new graphableLine(0, 1, 0, 0, 1, 1)));
-        // gL.add(plotLine(new graphableLine(0, 0, 1, 0, 1, 1)));
-        // gL.add(plotLine(new graphableLine(0, 0, 1, 1, 0, 1)));
-        // gL.add(plotLine(new graphableLine(1, 1, 0, 1, 1, 1)));
-        // gL.add(plotLine(new graphableLine(1, 0, 1, 1, 1, 1)));
-        // gL.add(plotLine(new graphableLine(0, 1, 1, 1, 1, 1)));
+        //plotCube();
 
 
         lGraphList = new graphableList(g, gL);
@@ -99,13 +87,27 @@ public class runGraph
         for (graphableLine i : p.getAxis()){
             gL.add(plotLine(i));
         }
-
-        
         
         //graphing graphList
         
         //in 2d valuesA
 
+    }
+
+    private void plotCube (){
+        gL.add(plotLine(new graphableLine(0, 0, 0, 0, 0, 5)));
+        gL.add(plotLine(new graphableLine(0, 0, 0, 0, 5, 0)));
+        gL.add(plotLine(new graphableLine(0, 0, 0, 5, 0, 0)));
+        gL.add(plotLine(new graphableLine(5, 0, 0, 5, 0, 5)));
+        gL.add(plotLine(new graphableLine(5, 0, 0, 5, 5, 0)));
+        gL.add(plotLine(new graphableLine(5, 0, 0, 5, 0, 0)));
+        gL.add(plotLine(new graphableLine(0, 5, 0, 5, 5, 0)));
+        gL.add(plotLine(new graphableLine(0, 5, 0, 0, 5, 5)));
+        gL.add(plotLine(new graphableLine(0, 0, 5, 0, 5, 5)));
+        gL.add(plotLine(new graphableLine(0, 0, 5, 5, 0, 5)));
+        gL.add(plotLine(new graphableLine(5, 5, 0, 5, 5, 5)));
+        gL.add(plotLine(new graphableLine(5, 0, 5, 5, 5, 5)));
+        gL.add(plotLine(new graphableLine(0, 5, 5, 5, 5, 5)));
     }
     
     // private double[][] matrixMult(double[][] m1, double[][] m2)
