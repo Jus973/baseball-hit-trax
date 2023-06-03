@@ -127,19 +127,25 @@ public class calc {
         
         while(t < 20)
         {
-            graphable g = new graphable(Math.abs(xVal * t * scaleFactor) + 3, 
-                                        Math.abs(yVal * t * scaleFactor) + 3, 
+            graphable g = new graphable(Math.abs(xVal * t * scaleFactor) + 4, 
+                                        Math.abs(yVal * t * scaleFactor) + 4, 
                                         Math.abs((zVal + 0.5 * 9.81 * t * t) * scaleFactor));
             
-            graphable a = new graphable(-Math.abs(xVal * t * scaleFactor) + 3, 
-                                        -Math.abs(yVal * t * scaleFactor) + 3, 
+            graphable a = new graphable(-Math.abs(xVal * t * scaleFactor) + 4, 
+                                        -Math.abs(yVal * t * scaleFactor) + 4, 
                                         Math.abs((zVal + 0.5 * 9.81 * t * t) * scaleFactor));
 
-            graphablePoints.add(a);
-            graphablePoints.add(g);
+
+            if (a.getX() > 0 && a.getY() > 0 && a.getZ() > 0){
+                graphablePoints.add(a);
+            }
+            if (g.getX() < 10 && g.getY() < 10 && g.getZ() < 10){
+                graphablePoints.add(g);
+            }
+            
 
             
-            t += 1;
+            t += 0.5;
         }
 
     }
