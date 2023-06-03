@@ -6,3 +6,4 @@ Three part project:
 2. Calculate the ball's projected path 
 3. Graph the ball on a 3D GUI - we decided to do this part by scratch, hence the large amount of files.
 
+Our presentation slides: https://docs.google.com/presentation/d/1La78hRCw2GB_KKVV9J4klkPI8mMj1uxeEPcz1EdUOcQ/edit?usp=sharing
