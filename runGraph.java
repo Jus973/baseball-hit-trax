@@ -215,7 +215,7 @@ public class runGraph
         // out[0] = (sp * X) + (cp * Y) + (400);
         // out[1] = (250) - (((cp*X)-(sp*Y))*st - (Z*ct));
 
-        //r = new graphable(out[0], out[1]);
+        // r = new graphable(out[0], out[1]);
 
 
         return r;
