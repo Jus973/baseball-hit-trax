@@ -3,6 +3,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
+ * @author Justin, Sambhu, Monesh
+ * @version 6.2.23
  * An object that represents a list of both graphable and graphableLine objects
  * To be used as a container and is called during the GUI paint() function
  */
