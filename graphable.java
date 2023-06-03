@@ -76,8 +76,5 @@ public class graphable {
      */
     public String toString() {
         return getX() + " " + getY() + " " + getZ();
-    }
-
-
-
+    }   
 }

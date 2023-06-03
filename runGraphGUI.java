@@ -16,12 +16,13 @@ public class runGraphGUI extends JFrame implements KeyListener{
     private runGraph rG;
     private final int DOT_SIZE = 8;
     private camera Cam;
-    ArrayList<graphable> baseballPoints;
+    private ArrayList<graphable> baseballPoints;
 
 
     /**
      * Constructor for the runGraphGUI class
-     * @param rG2 A runGraph object, which should have all the points to be graphed
+     * @param c a camera object that is used to create a runGraph object
+     * @param baseballDots An array of graphable objects to be plotted
      */
     public runGraphGUI(camera c, ArrayList<graphable> baseballDots) {
         super("3D Representation of Baseball");
@@ -59,7 +60,9 @@ public class runGraphGUI extends JFrame implements KeyListener{
     }
 
     /**
-     * The default paint function that is called every time the window is shifted, and etc.
+     * The default paint function that is called 
+     *every time the window is shifted, and etc.
+     * @param g a graphic object
      */
     public void paint(Graphics g) {
         super.paint(g);

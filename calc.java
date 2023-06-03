@@ -10,7 +10,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
  */
 public class calc {
 
-    private final double TIME_BETWEEN_FRAMES = 0.0041666666;
+    private final double TIME_BETWEEN_FRAMES_= 0.0041666666;
     //private final double DISTANCE_FIXED = 12;
     //private final double WIDTH_OF_BALL = 2.85;
     //private final double PIXEL_WIDTH_OF_BALL_AT_DISTANCE_FIXED_AWAY = 131.636;
@@ -103,9 +103,9 @@ public class calc {
         
         
         
-        double xVelocityInPixels =  dx / TIME_BETWEEN_FRAMES;
-        double zVelocityInPixels =  dz / TIME_BETWEEN_FRAMES;
-        double yVelocityInPixels =  dy / TIME_BETWEEN_FRAMES;
+        double xVelocityInPixels =  dx / TIME_BETWEEN_FRAMES_;
+        double zVelocityInPixels =  dz / TIME_BETWEEN_FRAMES_;
+        double yVelocityInPixels =  dy / TIME_BETWEEN_FRAMES_;
 
         double theta = Math.atan(zVelocityInPixels/yVelocityInPixels);
         double xVal = xVelocityInPixels * Math.cos(theta);

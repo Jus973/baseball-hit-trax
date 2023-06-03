@@ -17,8 +17,6 @@ public class camera extends graphable{
      * @param tZ The Z value for the camera
      * @param ang1 The angle value for width. 
      * @param ang2 The angle value for length. 
-     * @param f The FOV value for width.
-     * @param f2 The FOV value for length.
      */
     public camera (double tX, double tY, double tZ, double ang1, double ang2){
         super(tX, tY, tZ);
@@ -27,6 +25,7 @@ public class camera extends graphable{
     }
     /**
      * getter method for accessing angleW(pan angle)
+     * @return the angleW in camera
      */
     public double getAngleW()
     {
@@ -35,6 +34,7 @@ public class camera extends graphable{
 
     /**
      * getter method for accessing angleL(tilt angle)
+     * @return the angleL in camera
      */
     public double getAngleL()
     {
